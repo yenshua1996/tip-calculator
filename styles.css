@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 10rem 0;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+@media (min-width: 800px) {
+  .container {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}
+
+.grid-column {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: rgb(243, 243, 243);
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.19), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.form-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-panel > * {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.form-panel > *:nth-child(1) {
+  margin-bottom: 1.5rem;
+}
+
+input[type="text"] {
+  display: block;
+  width: 100%;
+  font-size: 1.25rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: none;
+  background-color: rgb(208, 208, 208);
+  transition: background-color 200ms ease-in-out;
+}
+
+input:focus {
+  outline: none;
+  background-color: #fff;
+}
+
+.tip-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+button[type="button"] {
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  transition: transform 200ms linear;
+}
+
+button {
+  cursor: pointer;
+}
+
+.btn {
+  background-color: rgb(17, 17, 187);
+  color: #fff;
+}
+
+.active {
+  transform: translateY(-5px);
+  background-color: #fff;
+  color: #444;
+}
+
+.initial-state {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.detail {
+  padding: 1.5rem;
+  background-color: rgb(247, 247, 247);
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.19), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.detail-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: rgb(17, 17, 187);
+}
+
+.amount,
+.tip-amount {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgb(99, 99, 99);
+}
